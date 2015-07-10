@@ -221,7 +221,12 @@ void draw(){
   if((key=='w')&&(keyPressed)) {
     dy=-1;    
   }
-  
+  if(vx>10){
+    vx=10;
+  }
+  if(vy>10){
+    vy=10;
+  }
   vy=vy+dy;
   y=y+vy;
   vx=vx+dx;
